@@ -43,6 +43,9 @@
             <h2>a better way to camp</h2>
           </div>
         </div>
+        <div class="row justify-content-end align-items-center">
+          <a href="#reservation-form" class="btn btn-info btn-lg text-nowrap">Reserve Campsite</a>
+        </div>
       </div>
     </header>
     <!-- Navbar component complete -->
@@ -94,7 +97,7 @@
         <div class="col">
           <div class="media">
             <img
-              class="d-flex mr-3 img-thumbnail"
+              class="d-flex m-3 img-thumbnail"
               src="/img/breadcrumb-trail-thumb.jpg"
               alt="breadcrumb Trail Thumbnail"
             />
@@ -109,27 +112,37 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-4 col-md-3">
-          <h2>Featured Campsites</h2>
+      <div class="row row-content align-items-center">
+        <div class="col-sm-4 order-sm-start col-md-3">
+          <h2 class="text-sm-left">Featured Campsites</h2>
         </div>
         <div class="col">
-          <h3>React Lake Campground</h3>
-          <p class="d-none d-sm-block">
-            Nestled in the foothills of the Chrome Mountains, this campground on
-            the shores of the pristine React Lake is a favorite for fly fishers.
-          </p>
+          <div class="media">
+            <img
+              class="d-flex ml-3 img-thumbnail order-last"
+              src="/img/breadcrumb-trail-thumb.jpg"
+              alt="breadcrumb Trail Thumbnail"
+            />
+            <div class="media-body align-self-center">
+              <h3>React Lake Campground</h3>
+              <p class="d-none d-sm-block">
+                Nestled in the foothils of the Chrome Mountains, this campground
+                on the shores of the pristine React lake is a favorite for fly
+                fishers.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Our Community Partners</h2>
         </div>
         <div class="col">
           <div class="media">
             <img
-              class="d-flex mr-3 img-thumbnail"
+              class="d-flex m-3 img-thumbnail"
               src="/img/bootstrap-thumb.png"
               alt="Bootstrap Outfitters"
             />
@@ -144,7 +157,55 @@
         </div>
       </div>
     </div>
+    <!-- Assignment Task 2  -->
 
+    <div class="row row-content">
+      <div class="col-sm-6 mx-auto">
+        <div class="card">
+          <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+          <div class="card-body">
+            <form id="reserveForm">
+              <div class="row form-group-row">
+                <div class="col-sm-6">
+                <label class="col-form-label" for="campsiteSelect">Number of Campers:</label>
+              </div>
+                <div class="col-sm-auto">
+                  <select class="form-select" name="numCampers" id="numCampers">
+                    <option value="" disabled selected>Select...</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option4">Option 4</option>
+                    <option value="option5">Option 5</option>
+                    <option value="option6">Option 6</option>
+                    <option value="option7">Option 7</option>
+                  </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-sm">
+                <label class="col-form-label" for="date">Date:</label>
+              </div>
+              <div class="col-sm">
+                <div class="row">
+                  <div class="col-sm">
+                    <input type="text" class="form-control" id="date" name="date" placeholder="mm/dd/yyyy">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </form>
+          </div>
+      </div>
+  </div>
+      </div>
+    </div>
+    <!-- Assignment Task 2 End -->
     <footer class="site-footer">
       <div class="container">
         <div class="row">
